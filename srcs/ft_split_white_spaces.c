@@ -6,11 +6,13 @@
 /*   By: mlantonn <mlantonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/01 16:43:56 by mlantonn          #+#    #+#             */
-/*   Updated: 2018/05/01 19:33:47 by mlantonn         ###   ########.fr       */
+/*   Updated: 2018/05/03 15:10:43 by mlantonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv1.h"
+#include "libft.h"
+#include <errno.h>
+#include <stdio.h>
 
 static int	is_white_space(char c)
 {

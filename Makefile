@@ -6,7 +6,7 @@
 #    By: mlantonn <mlantonn@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 16:44:01 by mlantonn          #+#    #+#              #
-#    Updated: 2018/03/22 18:54:20 by mlantonn         ###   ########.fr        #
+#    Updated: 2018/05/03 15:09:38 by mlantonn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ OBJS_PRE = $(addprefix $(OBJS_DIR)/, $(OBJS))
 SRCS_DIR = srcs
 SRCS =	ft_abs.c \
 		ft_arrdel.c \
+		ft_atof.c \
 		ft_atoi_base.c \
 		ft_atoi.c \
 		ft_bzero.c \
@@ -69,6 +70,7 @@ SRCS =	ft_abs.c \
 		ft_read_fd.c \
 		ft_realloc.c \
 		ft_showarr.c \
+		ft_split_white_spaces.c \
 		ft_strcat.c \
 		ft_strchr.c \
 		ft_strclr.c \

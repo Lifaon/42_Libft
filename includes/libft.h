@@ -6,7 +6,7 @@
 /*   By: mlantonn <mlantonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 15:54:19 by mlantonn          #+#    #+#             */
-/*   Updated: 2018/02/19 15:18:52 by mlantonn         ###   ########.fr       */
+/*   Updated: 2018/05/03 15:09:04 by mlantonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,7 @@ long long			ft_atoi_base(char const *s, int b);
 double				ft_pow(double x, int n);
 int					ft_abs(int nb);
 void				ft_putnbr_endl(int n);
+double				ft_atof(char const *str);
+char				**ft_split_white_spaces(char *str);
 
 #endif
