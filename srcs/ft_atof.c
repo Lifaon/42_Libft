@@ -6,7 +6,7 @@
 /*   By: mlantonn <mlantonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/03 13:57:43 by mlantonn          #+#    #+#             */
-/*   Updated: 2018/05/03 15:40:13 by mlantonn         ###   ########.fr       */
+/*   Updated: 2018/05/03 15:41:57 by mlantonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 double	ft_atof(char const *str)
 {
 	double	ret;
-	double	coeff;
+	int		coeff;
 	int		i;
 	int		sign;
 
@@ -33,8 +33,8 @@ double	ft_atof(char const *str)
 		ret = ret * 10.0 + (str[i++] - '0');
 	if (str[i++] != '.')
 		return (ret * (double)sign);
-	coeff = 1.0;
-	while (str[i] >= '0' && str[i] <= '9' && (coeff *= 10.0))
-		ret += ((double)(str[i++] - '0') / coeff);
+	coeff = 1;
+	while (str[i] >= '0' && str[i] <= '9' && (coeff *= 10))
+		ret += ((double)(str[i++] - '0') / (double)coeff);
 	return (ret * (double)sign);
 }
